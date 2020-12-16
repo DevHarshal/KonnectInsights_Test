@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Navbar</title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/vanilla.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.rcbrand.js"></script>
+
+    <script src="./assets/js/nav_init.js "></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.customer-logos').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: true,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="navigation" class="p-navigation">
+        <div class="p-navigation__row">
+            <div class="p-navigation__banner">
+                <div class="p-navigation__logo">
+                    <a class="p-navigation__item" href="#">
+                        <img class="p-navigation__image" src="./assets/images/logo-ks-blue_250.png" alt="">
+                    </a>
+                </div>
+                <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
+                <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">Close menu</a>
+            </div>
+            <nav class="p-navigation__nav" aria-label="Example sub navigation">
+                <span class="u-off-screen">
+              <a href="#main-content">Jump to main content</a>
+            </span>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item p-subnav" id="link-1">
+                        <a href="#link-1-menu" aria-controls="link-1-menu" class="p-subnav__toggle p-navigation__link">LXC</a>
+                        <ul class="p-subnav__items" id="link-1-menu" aria-hidden="true">
+                            <li>
+                                <a href="#" class="p-subnav__item">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-subnav__item">News</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-subnav__item">Getting started</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="p-navigation__item p-subnav" id="link-2">
+                        <a href="#link-2-menu" aria-controls="link-2-menu" class="p-subnav__toggle p-navigation__link">LXD</a>
+                        <ul class="p-subnav__items" id="link-2-menu" aria-hidden="true">
+                            <li>
+                                <a href="#" class="p-subnav__item">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-subnav__item">News</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-subnav__item">Getting started - Command line</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-subnav__item">Getting started - OpenStack</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-subnav__item">Getting started - OpenNebula</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="p-navigation__item p-subnav" id="link-3">
+                        <a href="#link-3-menu" aria-controls="link-3-menu" class="p-subnav__toggle p-navigation__link">LXCFS</a>
+                        <ul class="p-subnav__items" id="link-3-menu" aria-hidden="false">
+                            <li>
+                                <a href="#" class="p-subnav__item">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-subnav__item">News</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-subnav__item">Getting started</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="p-navigation__items">
+                    <a class="p-subnav__toggle p-navigation__link" aria-controls="account-menu">
+                        <button class="p-button has-icon kc-BTN"><span>Start FREE Trial</span> </button>
+                    </a>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="p-strip u-image-position kc-section" style="background-image: url(https://mleqewmp47ow.i.optimole.com/fzycRVQ-eIyU3lWO/w:auto/h:auto/q:auto/https://konnectinsights.com/wp-content/uploads/2018/03/banner-bg-1.png);">
+        <div class="row">
+            <div class="col-6">
+                <h4>Listen, Evaluate, Act </h4>
+                <h2>A Social Listening and Analytics tool with power of 4 products in one..</h2>
+                <p>One tool for everything you need as a brand. Konnect Insights is used by Marketers, Customer Care, Top Management, Analysts, CEO. Take data driven decisions with an integrated suite - Listening + Analytics + Publishing + ORM / Social CRM</p>
+                <a>
+                    <button class="p-button has-icon"><span>Request A Demo</span>
+                    <i class="p-icon--contextual-menu"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="col-6">
+                <img src="./assets/images/home_banner_compressed.png" alt="" class="u-image-position--right">
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="p-card">
+            <img class="p-card__thumbnail" src="./assets/images/icon/icon-25.png" alt="">
+            <!-- <hr class="u-sv1"> -->
+            <h2 class="p-card__title">Trusted by Top Brands and Agencies</h2>
+            <p class="p-card__content">Banking and Finance, Automobiles, Aviation, Telecom, Healthcare, Entertainment, IT, Pharma, E-Commerce, Sports, Insurance, Mutual Funds, Travel – they all use Konnect Insights. Built on latest Big-data technologies Konnect Insights is the
+                tool built for today’s changing time to meet modern business requirements.</p>
+        </div>
+    </section>
+
+    <section class="p-strip--image is-light">
+        <div class="row Kc-row">
+            <div class="col-4">
+                <div class="p-card--overlay" id="twovalues">
+                    <img class="p-card__thumbnail" src="./assets/images/icon/icon-2.png" alt="">
+                    <h2><a>All In One Tool</a></h2>
+                    <p class="p-card__content">Once you sign up with Konnect Insights you don’t have to manage / buy multiple tools. You get power of 4 social media tools in one</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-card--overlay" id="twovalues">
+                    <img class="p-card__thumbnail" src="./assets/images/icon/coverage-1.png" alt="">
+                    <h2><a>Great Coverage</a></h2>
+                    <p class="p-card__content">Don’t miss a single conversation anywhere on the web. Konnect's social media tool crawls millions of sites and all social channels</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-card--overlay" id="twovalues" style="border-right:none !important">
+                    <img class="p-card__thumbnail" src="./assets/images/icon/dashboard-2.webp" alt="">
+                    <h2><a>Beautiful Dashboards</a></h2>
+                    <p class="p-card__content">You will simply fall in love with the UI/UX of Konnect Insights! Take reporting to all new level with our beautiful social media tool dashboards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="p-card kc-ytbcgd">
+            <div class="Kc-cntrImg">
+                <img class="p-heading-icon__img" src="./assets/images/icon/sl-film.PNG" alt="">
+            </div>
+            <div class="u-embedded-media">
+                <iframe class="ifr_inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="600" height="338.98305084746" src="https://www.youtube.com/embed/S51MFH5N3zM?iv_load_policy=3&amp;playlist=S51MFH5N3zM&amp;enablejsapi=1&amp;disablekb=1&amp;autoplay=0&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;origin=https%3A%2F%2Fkonnectinsights.com&amp;widgetid=1"
+                    id="widget2" style="height: 338.983px;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="p-card kc-m-b-50">
+            <div class="Kc-cntrImg">
+                <img class="p-heading-icon__img Kc-Img " src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-ePgUJGf6/w:auto/h:auto/q:auto/https://konnectinsights.com/wp-content/uploads/2018/03/icon-9.png" alt="image">
+            </div>
+            <!-- <hr class="u-sv1"> -->
+            <h2 class="p-card__title kc-align kc-m-b">You will simply fall in love with the User Experience of Konnect Insights.</h2>
+            <p class="p-card__content kc-align">Take reporting to all new level with our beautiful dashboards <br> Built on latest Big-Data technologies, the experience using the tool is very rich
+            </p>
+        </div>
+
+        <div class="row kc-m-b">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="p-card--overlay kc-brdrnne" style="background: none;">
+                            <img class="p-card__thumbnai kc-m-b-0" src="./assets/images/icon/icon-9.png" alt="">
+                            <h2><a>User Experience</a></h2>
+                            <p class="p-card__content kc-p-text">Built on latest Big-Data technologies, the experience using the tool is amazing</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="p-card--overlay kc-brdrnne" style="background: none;">
+                            <img class="p-card__thumbnail kc-m-b-0" src="./assets/images/icon/icon-22.webp" alt="">
+                            <h2><a>Beautiful UI</a></h2>
+                            <p class="p-card__content kc-p-text">User Interface that is beautiful, simple and improves efficiency</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="p-card--overlay kc-brdrnne" style="background: none;">
+                            <img class="p-card__thumbnail kc-m-b-0" src="./assets/images/icon/icon-25.png" alt="">
+
+                            <h2><a>Powerful BI Tools</a></h2>
+                            <p class="p-card__content kc-p-text">Create your own custom dashboards with ease. Get the power of best BI tools in-built</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="kc-bg" id="threevalues">
+                    <img src="./assets/images/icon/home1.jpg" alt="" class="u-image-position--right kc-shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="kc-mb">
+        <div class="rt-container">
+            <div class="col-rt-12">
+
+                <div>
+                    <h2 class="p-card__title kc-align">Trusted & Loved by</h2>
+
+                </div>
+                <section class="customer-logos slider">
+
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-Q0UwJIF3/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/omni.jpg" alt="Omni">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-EnmNMB0U/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/madison.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-islaFcRx/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/karvy.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-bbX8DpJX/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/icici.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-olYVcgI_/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/03/konkan.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-qB-XMKp9/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/03/iprospect.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-rTsOQlZx/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/03/radio.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-9vSkfpG2/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/03/kinnect.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-BHv1iQt2/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/ri.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-F4QH3iNx/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2020/06/fulcro.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-d0W4j7Ue/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/vlcc.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-NHZhCoES/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2020/06/franklin.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-Ksoesk0t/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/schbang.jpg" alt="">
+                    </div>
+
+
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-AJjuA84u/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/publicis.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-fA5VXtTw/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/reliance.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-cvVp3243/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/times.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-u6QC5xqP/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/hds.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-z-lPajDg/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/tdc.jpg" alt="">
+                    </div>
+
+
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-H1Nl1lXP/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2019/02/mahindra.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-s8FtrUSg/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2020/06/shermaroo.jpg"></div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-E-6d6uAf/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2020/06/wolksvagen.jpg"></div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-obRGhIQt/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2020/06/wonderchecf.jpg"></div>
+                    <div class="slide">
+                        <img src="https://mleqewmp47ow.i.optimole.com/fzycRVQ-ry62zUuI/w:235/h:132/q:auto/https://konnectinsights.com/wp-content/uploads/2020/09/sbi.jpg"></div>
+
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="contact-section" style="background-image: url(./assets/images/icon/bg-shape-five.png)">
+                        <img src="./assets/images/icon/featured-image-4.png " alt=" " class="u-image-position--left kc-contct">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 ">
+                <div class="row">
+                    <h3 class="p-card__title kc-align kc-formTitle">Sign Up for a FREE Trial</h3>
+                    <p class="kc-form_p">Take a tour into the world of Excellence</p>
+                </div>
+                <form>
+                    <label for="username" class="kc-label">Full Name</label>
+                    <input type="text " id="username " class="is-dense kc-form" name="username " autocomplete="username " required=" ">
+                    <label class="kc-label" for="email ">Enter your Business Email id</label>
+                    <input type="text " id="email " class="is-dense kc-form" name="email " autocomplete="email " required=" ">
+                    <label class="kc-label" for="Password">Create a Password</label>
+                    <input type="text " id="Password " class="is-dense kc-form" name="Password " autocomplete="current-password " required=" ">
+                    <label class="kc-label" for="Mobile">Mobile Number </label>
+                    <input type="number " id="Mobile " class="is-dense kc-form" name="Mobile " autocomplete="mobile " required=" ">
+
+                    <label class="kc-label" for="exampleSelect ">Select Timezone</label>
+                    <select name="exampleSelect " id="exampleSelect " class="is-dense kc-form">
+                      <option value=" " disabled="disabled " selected=" ">Select Timezone</option>
+                      <option value="1 ">Cosmic Cuttlefish</option>
+                      <option value="2 ">Bionic Beaver</option>
+                      <option value="3 ">Xenial Xerus</option>
+                    </select>
+
+                    <label class="kc-label">Business Type</label>
+                    <label class="p-radio--inline">
+                        <input type="radio" class="p-radio__input kc-label" name="radioPattern" aria-labelledby="inlineRadioExample1">
+                        <span class="p-radio__label" id="inlineRadioExample1">Brand</span>
+                      </label>
+                    <label class="p-radio--inline">
+                        <input type="radio" class="p-radio__input kc-label" name="radioPattern" aria-labelledby="inlineRadioExample1">
+                        <span class="p-radio__label" id="inlineRadioExample1">Agency</span>
+                      </label>
+                    <p class="kc-label" style="margin-top: 12px;">By clicking submit you agree to the <a class="kc-a">Terms of Service</a> and <a class="kc-a">Privacy Policy</a> </p>
+
+                    <div class="kc-align">
+                        <button class="p-button--positive">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>About</h3>
+            <ul class="kc-ul">
+                <li class="kc-li"><a>Home</a></li>
+                <li class="kc-li"><a>Blog</a></li>
+                <li class="kc-li"><a>Tutorial</a></li>
+                <li class="kc-li"><a>Careers</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-left">
+            <h3>Features</h3>
+            <ul class="kc-ul">
+                <li class="kc-li"><a>Social Listening Tool</a></li>
+                <li class="kc-li"><a>Social CRM Tool</a></li>
+                <li class="kc-li"><a>Social Analytics Tool</a></li>
+                <li class="kc-li"><a>Social Publishing Tool</a></li>
+            </ul>
+        </div>
+        <div class="footer-center">
+            <h3>Know More</h3>
+            <ul class="kc-ul">
+                <li class="kc-li"><a>Pricing</a></li>
+                <li class="kc-li"><a>Migrate to Konnect Insights</a></li>
+                <li class="kc-li"><a>Command Center</a></li>
+                <li class="kc-li"><a>Webinars</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h3>Newsletter</h3>
+            <p class="footer-company-about">
+                <span>Subscribe to our Newsletter to get latest updates and offers.
+            </p>
+            <div class="col-3">
+                <input type="text " id="email " class="is-dense kc-form kc-footr kc-ftrLbl" name="email " autocomplete="email " required=" " placeholder="Your Email Address">
+            </div>
+            <div class="col-4">
+                <div class="kc-align">
+                    <button class="kc-Btnsubs">Subscribe</button>
+                </div>           
+            </div>
+        </div>
+        <div class="footer-right">
+            <h3>Follow</h3>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="p-icon--facebook"></i></a>
+                <a href="#"><i class="p-icon--twitter"></i></a>
+                <a href="#"><i class="p-icon--youtube"></i></a>
+                <a href="#"><i class="p-icon--instagram"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script type="text/javascript">
+        $(window).load(function() {
+
+            $("#rcbrand2").rcbrand({
+                visibleItems: 5,
+                itemsToScroll: 1,
+                autoPlay: {
+                    enable: true,
+                    interval: 3000,
+                    pauseOnHover: true
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
